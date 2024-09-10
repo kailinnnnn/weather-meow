@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://api.weatherapi.com/v1";
+const baseURL = "https://api.weatherapi.com/v1";
 
 const buildQuery = (location) => {
   if (typeof location === "object") {

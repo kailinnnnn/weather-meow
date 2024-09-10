@@ -3,7 +3,7 @@ import { AuthProvider } from "./context/authContext";
 
 function App() {
   return (
-    <div className="flex h-screen w-full min-w-80">
+    <div className="flex h-screen w-full">
       <AuthProvider>
         <Outlet />
       </AuthProvider>

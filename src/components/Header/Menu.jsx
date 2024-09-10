@@ -28,13 +28,15 @@ export default function Menu({ isVisible, theme, onClose, user, logout }) {
             <i className="fa-solid fa-arrow-left" onClick={onClose}></i>
           </div>
           {accountButton}
-          <Link
-            to="/signin"
-            className="flex h-20 w-full items-center pl-12"
-            onClick={logout}
-          >
-            Logout
-          </Link>
+          {user && (
+            <Link
+              to="/signin"
+              className="flex h-20 w-full items-center pl-12"
+              onClick={logout}
+            >
+              Logout
+            </Link>
+          )}
         </div>
       </div>
     )

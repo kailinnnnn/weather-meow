@@ -5,13 +5,13 @@ export default function Signin() {
   const { login } = useAuth();
 
   return (
-    <div className="bg-rainy-gradStart flex h-full w-full flex-col items-center p-10">
-      <h1 className="text-textLight my-auto text-center text-3xl font-semibold leading-[3rem]">
+    <div className="flex h-full w-full flex-col items-center bg-rainy-gradStart p-10">
+      <h1 className="my-auto text-center text-3xl font-semibold leading-[3rem] text-textLight">
         Weather
         <br /> Always <br />
         Good
         <br />
-        <i class="fa-regular fa-face-smile"></i>
+        <i className="fa-regular fa-face-smile"></i>
       </h1>
 
       <button
@@ -21,7 +21,7 @@ export default function Signin() {
         <i className="fa-brands fa-google text-lg"></i>
         Login with Google
       </button>
-      <Link to="/" className="text-textNeutral mb-5 block">
+      <Link to="/" className="mb-5 block text-textNeutral">
         Login later
       </Link>
     </div>
